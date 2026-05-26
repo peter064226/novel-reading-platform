@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="600" viewBox="0 0 400 600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0c29"/>
+      <stop offset="50%" style="stop-color:#302b63"/>
+      <stop offset="100%" style="stop-color:#24243e"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="40%">
+      <stop offset="0%" style="stop-color:#a78bfa;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#0f0c29;stop-opacity:0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="600" fill="url(#bg)"/>
+  <rect width="400" height="600" fill="url(#glow)"/>
+
+  <!-- Decorative stars -->
+  <circle cx="60"  cy="80"  r="1.5" fill="#e2e8f0" opacity="0.8"/>
+  <circle cx="120" cy="40"  r="1"   fill="#e2e8f0" opacity="0.6"/>
+  <circle cx="200" cy="60"  r="2"   fill="#e2e8f0" opacity="0.9"/>
+  <circle cx="300" cy="30"  r="1.5" fill="#e2e8f0" opacity="0.7"/>
+  <circle cx="350" cy="90"  r="1"   fill="#e2e8f0" opacity="0.5"/>
+  <circle cx="80"  cy="150" r="1"   fill="#e2e8f0" opacity="0.4"/>
+  <circle cx="330" cy="160" r="1.5" fill="#e2e8f0" opacity="0.6"/>
+  <circle cx="160" cy="110" r="1"   fill="#e2e8f0" opacity="0.5"/>
+  <circle cx="260" cy="130" r="1"   fill="#e2e8f0" opacity="0.7"/>
+
+  <!-- Moon -->
+  <circle cx="200" cy="180" r="55" fill="#1e1b4b" opacity="0.6"/>
+  <circle cx="200" cy="180" r="50" fill="none" stroke="#a78bfa" stroke-width="1.5" opacity="0.8"/>
+  <circle cx="200" cy="180" r="42" fill="#312e81" opacity="0.5"/>
+
+  <!-- Book icon in moon -->
+  <rect x="178" y="162" width="44" height="36" rx="3" fill="none" stroke="#c4b5fd" stroke-width="2"/>
+  <line x1="200" y1="162" x2="200" y2="198" stroke="#c4b5fd" stroke-width="1.5"/>
+  <line x1="184" y1="172" x2="196" y2="172" stroke="#c4b5fd" stroke-width="1" opacity="0.7"/>
+  <line x1="184" y1="179" x2="196" y2="179" stroke="#c4b5fd" stroke-width="1" opacity="0.7"/>
+  <line x1="184" y1="186" x2="196" y2="186" stroke="#c4b5fd" stroke-width="1" opacity="0.7"/>
+  <line x1="204" y1="172" x2="216" y2="172" stroke="#c4b5fd" stroke-width="1" opacity="0.7"/>
+  <line x1="204" y1="179" x2="216" y2="179" stroke="#c4b5fd" stroke-width="1" opacity="0.7"/>
+  <line x1="204" y1="186" x2="216" y2="186" stroke="#c4b5fd" stroke-width="1" opacity="0.7"/>
+
+  <!-- Divider line -->
+  <line x1="60" y1="270" x2="340" y2="270" stroke="#a78bfa" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Title: 午夜图书馆 -->
+  <text x="200" y="320" font-family="serif" font-size="36" font-weight="bold"
+        fill="#e2e8f0" text-anchor="middle" letter-spacing="8">午夜图书馆</text>
+
+  <!-- Subtitle decoration -->
+  <text x="200" y="355" font-family="serif" font-size="13"
+        fill="#a78bfa" text-anchor="middle" letter-spacing="4" opacity="0.9">MIDNIGHT LIBRARY</text>
+
+  <!-- Divider line -->
+  <line x1="60" y1="375" x2="340" y2="375" stroke="#a78bfa" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- Description snippet -->
+  <text x="200" y="415" font-family="serif" font-size="12"
+        fill="#94a3b8" text-anchor="middle" opacity="0.8">在午夜出现的图书馆</text>
+  <text x="200" y="435" font-family="serif" font-size="12"
+        fill="#94a3b8" text-anchor="middle" opacity="0.8">你只能翻开一本书</text>
+
+  <!-- Author -->
+  <text x="200" y="530" font-family="serif" font-size="14"
+        fill="#64748b" text-anchor="middle" letter-spacing="3">匿名 著</text>
+
+  <!-- Bottom border decoration -->
+  <rect x="40" y="560" width="320" height="1" fill="#a78bfa" opacity="0.3"/>
+  <rect x="80" y="565" width="240" height="1" fill="#a78bfa" opacity="0.2"/>
+</svg>
