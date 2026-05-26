@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "墨境 — 互动小说平台",
   description:
     "在文字构筑的世界里，每一次选择都是一段新的旅程。探索沉浸式互动小说，开启你的故事。",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
