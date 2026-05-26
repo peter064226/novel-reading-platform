@@ -5,9 +5,10 @@ import StoryReaderClient from "@/components/StoryReaderClient";
 import type { StoryReaderPageProps } from "@/types";
 
 export default async function StoryReaderPage({ params }: StoryReaderPageProps) {
+  const { novelId } = await params;
   const [scenes, novel] = await Promise.all([
-    getScenesByNovelId(params.novelId),
-    getNovelById(params.novelId),
+    getScenesByNovelId(novelId),
+    getNovelById(novelId),
   ]);
 
   if (!novel || scenes.length === 0) {

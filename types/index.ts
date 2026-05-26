@@ -54,13 +54,13 @@ export interface StoryReaderClientProps {
 // ============================================================
 
 export interface NovelDetailPageProps {
-  params: {
+  params: Promise<{
     id: string;
-  };
+  }>;
 }
 
 export interface StoryReaderPageProps {
-  params: {
+  params: Promise<{
     novelId: string;
-  };
+  }>;
 }

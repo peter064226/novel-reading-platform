@@ -6,7 +6,8 @@ import Button from "@/components/Button";
 import type { NovelDetailPageProps } from "@/types";
 
 export default async function NovelDetailPage({ params }: NovelDetailPageProps) {
-  const novel = await getNovelById(params.id);
+  const { id } = await params;
+  const novel = await getNovelById(id);
 
   if (!novel) {
     notFound();
