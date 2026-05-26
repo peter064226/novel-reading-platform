@@ -1,4 +1,5 @@
 import Link from "next/link";
+import DarkModeToggle from "@/components/DarkModeToggle";
 
 export default function Navigation() {
   return (
@@ -22,14 +23,15 @@ export default function Navigation() {
           <span>墨境</span>
         </Link>
 
-        {/* Right-side nav slots (reserved for future links / dark-mode toggle) */}
-        <nav className="flex items-center gap-4" aria-label="主导航">
+        {/* Right-side nav */}
+        <nav className="flex items-center gap-2" aria-label="主导航">
           <Link
             href="/"
             className="hidden text-sm font-medium text-slate-600 transition-colors hover:text-violet-600 sm:block dark:text-slate-400 dark:hover:text-violet-400"
           >
             书库
           </Link>
+          <DarkModeToggle />
         </nav>
       </div>
     </header>
