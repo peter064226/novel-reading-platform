@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Tell Tailwind v4 to activate dark: utilities via the .dark class */
+@variant dark (&:where(.dark, .dark *));
+
 /* ============================================================
    CSS custom properties — light / dark theme tokens
    ============================================================ */
@@ -9,11 +12,19 @@
   --accent:     #7c3aed;   /* violet-700 */
 }
 
+/* Responds to the .dark class toggled by DarkModeToggle */
+.dark {
+  --background: #020617;  /* slate-950 */
+  --foreground: #f1f5f9;  /* slate-100 */
+  --accent:     #a78bfa;  /* violet-400 */
+}
+
+/* Fallback: also respect OS-level preference when no class is set */
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #020617;  /* slate-950 */
-    --foreground: #f1f5f9;  /* slate-100 */
-    --accent:     #a78bfa;  /* violet-400 */
+  :root:not(.dark):not(.light) {
+    --background: #020617;
+    --foreground: #f1f5f9;
+    --accent:     #a78bfa;
   }
 }
 
