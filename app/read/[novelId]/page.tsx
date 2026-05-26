@@ -16,10 +16,10 @@ export default async function StoryReaderPage({ params }: StoryReaderPageProps) 
   }
 
   return (
-    <main className="min-h-screen bg-slate-50 dark:bg-slate-950">
+    <main className="min-h-screen bg-amber-50/60 dark:bg-slate-950">
       {/* Novel title header */}
-      <header className="border-b border-slate-200 bg-white px-4 py-4 text-center dark:border-slate-800 dark:bg-slate-900">
-        <h1 className="text-lg font-semibold text-slate-900 dark:text-slate-50">
+      <header className="border-b border-amber-200/70 bg-amber-50 px-4 py-4 text-center shadow-sm dark:border-slate-800 dark:bg-slate-900">
+        <h1 className="font-serif text-lg font-semibold tracking-wide text-amber-900 dark:text-slate-50">
           {novel.title}
         </h1>
       </header>
